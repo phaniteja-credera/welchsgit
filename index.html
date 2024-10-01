@@ -8,5 +8,21 @@
   <body>
     <h1>Hello Phani</h1>
     <p>This is a dev branch</p>
+    <button id="increment">Increment</button>
+    <button id="decrement">Decrement</button>
+    <h3 id="value">Value: 0</h3>
+    <script>
+      let count = 0; // Initialize count
+
+      document.getElementById("increment").onclick = function () {
+        count++; // Increment count
+        document.getElementById("value").innerText = "Value: " + count; // Update displayed value
+      };
+
+      document.getElementById("decrement").onclick = function () {
+        count--; // Decrement count
+        document.getElementById("value").innerText = "Value: " + count; // Update displayed value
+      };
+    </script>
   </body>
 </html>
